@@ -6,6 +6,7 @@ body {
   background-position: top center;
   background-size: cover;
   font-size: 16px;
+  font-family: 'Cinzel', serif;
 }
 
 .green {
@@ -79,7 +80,7 @@ dt {
 
 .level-up {
   font-size: 30px;
-  font-family: fantasy;
+  font-family: Cinzel;
   margin-left: 40px;
   vertical-align: middle;
 }
@@ -98,7 +99,7 @@ dt {
   padding-top: 20px;
   padding-right: 30px;
   font-size: 20px;
-  font-family: fantasy;
+  font-family: Cinzel;
   text-align: center;
 }
 
@@ -125,6 +126,6 @@ vertical-align: top;
 h1 {
   margin: 0;
   font-size: 5em;
-  font-family: fantasy;
+  font-family: Cinzel;
   text-align: center;
 }
