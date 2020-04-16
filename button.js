@@ -57,7 +57,7 @@ buttonPower.onclick = function(){                                               
         counterP = 0;
         counter3P++;
         document.getElementById('elemP2').textContent = counter3P;
-        if (counter3P == 10) {
+        if (counter3P >= 10) {
           rick.classList.remove('Rick');
         }
       }
@@ -80,7 +80,7 @@ buttonAgility.onclick = function (){                                            
         counterA = 0;
         counter3A++;
         document.getElementById('elemA2').textContent = counter3A;
-        if (counter3A == 15) {
+        if (counter3A >= 15) {
           ric.classList.remove('Ric');
         }
       }
@@ -102,7 +102,7 @@ buttonMagic.onclick = function (){                                              
         counterM = 0;
         counter3M++;
         document.getElementById('elemM2').textContent = counter3M;
-        if (counter3M == 10) {
+        if (counter3M >= 10) {
           ri.classList.remove('Ri');
         }
       }
