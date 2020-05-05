@@ -1,0 +1,111 @@
+/* main font
+font-family: 'Poppins', sans-serif;
+*/
+
+/* logo font
+font-family: 'Kaushan Script', cursive;
+*/
+
+
+nav {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 1.8px;
+}
+
+/* Header Logo */
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #3F3F3F;
+}
+
+
+.logo {
+	display: flex;
+	flex-basis: 70%;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 26px;
+	color: white;
+	min-height: 200px;
+}
+
+.logo-smoke {
+	width: 175px;
+	height: 175px;
+}
+
+h1 {
+	padding-left: 25px;
+}
+
+/* Header Nav */
+
+nav {
+	display: flex;
+	flex-wrap: wrap;
+	flex-basis: 30%;
+	min-height: 200px;
+	background-color: white;
+}
+
+.menu .button-menu, .dropdown {
+	flex-basis: 33%;
+	flex-grow: 1;
+	background-color: #3F3F3F;
+	color: white;
+	font-size: 18px;
+	border: 2px solid white;
+	border-top: none;
+}
+
+.dropdown {
+	display: flex;
+	position: relative;
+}
+
+.button-menu-dropdown {
+	flex-basis: 100%;
+	background-color: #3F3F3F;
+	color: white;
+	font-size: 18px;
+}
+
+.menu .button-menu:hover {
+	background-color: #282828;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	bottom: -175px;
+	width: 50%;
+	border: 1px solid #9B9B9B;
+	background-color: #E8E8E8;
+}
+
+.dropdown-content a {
+	display: block;
+	font-size: 16px;
+	color: #595959;
+	padding: 20px;
+	text-decoration: none;
+	border-bottom: 1px solid #9B9B9B;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	}
+
+a:hover {
+	background-color: #898989;
+}
