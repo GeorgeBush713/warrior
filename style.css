@@ -52,9 +52,10 @@ h1 {
 nav {
 	display: flex;
 	flex-wrap: wrap;
-	flex-basis: 30%;
+	/*flex-basis: 30%;*/
 	min-height: 200px;
 	background-color: white;
+	flex-grow: 1;
 }
 
 .menu .button-menu, .dropdown {
