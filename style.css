@@ -162,6 +162,12 @@ h1 {
 	line-height: 2em;
 }
 
+@media screen and (orientation: portrait) and (max-width: 1024px) { 
+	.main-text p {
+		font-size: 25px;
+	}
+}
+
 /* Section 1: History; */
 
 .history {
