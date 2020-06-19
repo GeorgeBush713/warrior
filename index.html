@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="500"></canvas>
+
+	<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+
+    <script>
+      var balls = [];
+
+      var Ball = function () {
+        this.x = 100;
+        this.y = 100;
+        this.xSpeed = -Math.floor(Math.random() * 10  - 5);
+        this.ySpeed = Math.floor(Math.random() * 10  - 5);
+      };
+
+      var circle = function (x, y, r, fillCircle) {
+        ctx.beginPath();
+        ctx.arc(x, y, r, 0, Math.PI * 2, false);
+        if (fillCircle) {
+          ctx.fill();
+        } else {
+          ctx.stroke();
+        }
+      };
+
+      Ball.prototype.draw = function () {
+        circle(this.x, this.y, 10, true);
+      };
+
+      Ball.prototype.move = function () {
+        this.x += this.xSpeed;
+        this.y += this.ySpeed;
+      };
+
+      Ball.prototype.changeMove = function () {
+        if (this.x > width || this.x < 0) {
+            this.xSpeed = -this.xSpeed;
+        }
+        if (this.y > height || this.y < 0) {
+            this.ySpeed = -this.ySpeed;
+        }
+      };
+
+      var ctx = document.getElementById("canvas").getContext("2d");
+
+      var width = canvas.width;
+      var height = canvas.height;
+
+      for (var i = 0; i < 9; i++) {
+        balls[i] = new Ball(); 
+      }
+
+      console.log(balls);
+
+      setInterval(function () {
+      ctx.clearRect(0, 0, width, height);
+
+        for (var j = 0; j < 2; j++) {
+
+        balls[j].draw();
+        balls[j].move();
+        balls[j].changeMove();
+        if (j === 1) {
+          j = 0;
+        }
+        }
+
+      ctx.strokeRect(0, 0, width, height);
+      }, 30);
+    </script>
+</body>
+</html>
